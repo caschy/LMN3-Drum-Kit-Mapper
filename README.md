@@ -6,6 +6,7 @@ This is python script is to be run on the Raspberry Pi that is running your DAW.
 
 The python script requires tkinter. To install tkinter, open a terminal and type `sudo apt-get install python3-tk`
 
+## Install and Run
 Download the script and run it in a terminal with, `python drumkit_yaml_GUI.py`
 
 You will be presented with a piano looking GUI.  Clicking on each key will open a file browser where you can set/select a sound file to that specific key.
