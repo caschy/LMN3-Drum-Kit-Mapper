@@ -4,7 +4,7 @@ Built for the LMN3, an open source DAW-in-a-box, this creates a simple GUI to ma
 ## Prerequisites
 This is python script is to be run on the Raspberry Pi that is running your DAW.  It assumes you have already copied your drum kit directory to the `/home/pi/.config/LMn-3/drum_kit` directory.
 
-The python script requires tkinter. To install tkinter, open a terminal and type `sudo apt-get install python-tk`
+The python script requires tkinter. To install tkinter, open a terminal and type `sudo apt-get install python3-tk`
 
 Download the script and run it in a terminal with, `python drumkit_yaml_GUI.py`
 
