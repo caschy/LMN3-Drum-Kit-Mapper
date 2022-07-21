@@ -430,7 +430,8 @@ class MyFirstGUI:
 
 
 root = Tk()
-root.iconbitmap(os.path.dirname(file_path)+r'\ico.ico')
+if os.path.isfile('ico.ico'):
+        root.iconbitmap(r'ico.ico')
 my_gui = MyFirstGUI(root)
 num1 = StringVar()
 
