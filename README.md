@@ -6,6 +6,9 @@ This is python script can be run on any machine where you want to create a folde
 
 The python script requires tkinter. To install tkinter, open a terminal and type `sudo apt-get install python3-tk`
 
+- To install tkinter on MacOS with homebrew
+`brew install python-tk@3.9`
+
 ## Install and Run
 Download the script and ico.png (icon file)
 
