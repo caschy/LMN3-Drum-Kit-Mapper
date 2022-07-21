@@ -427,6 +427,5 @@ root = Tk()
 photo = PhotoImage(file = 'ico.png')
 root.wm_iconphoto(False, photo)
 my_gui = MyFirstGUI(root)
-num1 = StringVar()
 
 root.mainloop()
