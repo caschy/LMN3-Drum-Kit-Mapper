@@ -13,7 +13,9 @@ Run the script in a terminal with, `python drumkit_yaml_GUI.py`
 
 You will be presented with a piano looking GUI.  Clicking on each key will open a file browser where you can set/select a sound file to that specific key.
 
-When you are done assigning keys, click on the yellow "Make YAML."  You'll be prompted to enter the name of the drum_kit directory and lastly whether you'd like the YAML file copied thereto.
+When you are done assigning keys, click on the yellow "Make YAML."  You'll be prompted to enter the name of the drum kit and lastly where to save the YAML file.
+
+If all went well, you'll be left with a YAML file named by your previous input.
 
 
 
