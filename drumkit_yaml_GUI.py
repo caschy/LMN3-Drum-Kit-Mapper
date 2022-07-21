@@ -202,12 +202,12 @@ def note_E5():
 	E5_filename=filename
 
 def make_yaml():
-        user_in = askstring('LMN3 Dialog', "Enter drum kit name")
+        #user_in = askstring('LMN3 Dialog', "Enter drum kit name")
         filetypes = (('yaml files', '.yaml'),('All files', '.*'))
-        yfilename = fd.asksaveasfile(title='Save YAML to...',initialdir=file_path,filetypes=filetypes,initialfile=user_in+".yaml")
-
+        yfilename = fd.asksaveasfile(title='Save YAML to...',defaultextension=".yaml",initialdir=file_path,filetypes=filetypes,initialfile="")
+        yfile = os.path.splitext(os.path.basename(yfilename.name))
         f = open(yfilename.name, "w")
-        f.write('name: "'+user_in+'"\n')
+        f.write('name: "'+yfile[0]+'"\n')
         f.write('mappings:\n')
 
         f.write('  - note_number: "53"\n')
