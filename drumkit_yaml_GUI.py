@@ -1,12 +1,10 @@
 import os
-import tempfile, shutil
 
 from tkinter import * # for python > 3.4
 from tkinter import filedialog as fd
 from tkinter.messagebox import showinfo
 from tkinter.simpledialog import askstring
 from tkinter.messagebox import askquestion
-from sys import platform
 
 file_path = os.path.realpath(__file__)
 user_in = ""
@@ -206,9 +204,9 @@ def note_E5():
 def make_yaml():
         user_in = askstring('LMN3 Dialog', "Enter drum kit name")
         filetypes = (('yaml files', '.yaml'),('All files', '.*'))
-        yfilename = fd.asksaveasfile(title='Save YAML to...',initialdir=file_path,filetypes=filetypes,initialfile=user_in)
+        yfilename = fd.asksaveasfile(title='Save YAML to...',initialdir=file_path,filetypes=filetypes,initialfile=user_in+".yaml")
 
-        f = tempfile.NamedTemporaryFile(mode='w+t', delete=False)
+        f = open(yfilename.name, "w")
         f.write('name: "'+user_in+'"\n')
         f.write('mappings:\n')
 
@@ -332,16 +330,11 @@ def make_yaml():
                 f.write('    file_name: "'+E5_filename+'"\n')
         else:
                 f.write('    file_name: ""\n')
-
-        fn = f.name
+		
         f.close()
         
-        shutil.copy(fn, yfilename.name+".yaml")
-        os.remove(fn)
-
-        showinfo(title='YAML Saved...',message=yfilename.name+".yaml")
-        #os.remove(yfilename.name)
-
+        showinfo(title='YAML Saved...',message=yfilename.name)
+        
 	
 class MyFirstGUI:
 	def __init__(self, master):
