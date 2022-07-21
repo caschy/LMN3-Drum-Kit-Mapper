@@ -7,7 +7,7 @@ This is python script can be run on any machine where you want to create a folde
 The python script requires tkinter. To install tkinter, open a terminal and type `sudo apt-get install python3-tk`
 
 ## Install and Run
-Download the script and ico.ico (icon file)
+Download the script and ico.png (icon file)
 
 Run the script in a terminal with, `python drumkit_yaml_GUI.py`
 
