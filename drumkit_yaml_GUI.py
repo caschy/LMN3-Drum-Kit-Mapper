@@ -431,9 +431,8 @@ class MyFirstGUI:
 
 
 root = Tk()
-if platform == "win32":
-        if os.path.isfile('ico.ico'):
-                root.iconbitmap(r'ico.ico')
+photo = PhotoImage(file = 'ico.png')
+root.wm_iconphoto(False, photo)
 my_gui = MyFirstGUI(root)
 num1 = StringVar()
 
