@@ -1,11 +1,12 @@
-#from Tkinter import *  #for python2.7
+import os
+import tempfile, shutil
+
 from tkinter import * # for python > 3.4
 from tkinter import filedialog as fd
 from tkinter.messagebox import showinfo
 from tkinter.simpledialog import askstring
 from tkinter.messagebox import askquestion
-import os
-import tempfile, shutil
+from sys import platform
 
 file_path = os.path.realpath(__file__)
 user_in = ""
@@ -430,8 +431,9 @@ class MyFirstGUI:
 
 
 root = Tk()
-if os.path.isfile('ico.ico'):
-        root.iconbitmap(r'ico.ico')
+if platform == "win32":
+        if os.path.isfile('ico.ico'):
+                root.iconbitmap(r'ico.ico')
 my_gui = MyFirstGUI(root)
 num1 = StringVar()
 
