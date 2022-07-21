@@ -5,7 +5,9 @@ from tkinter.messagebox import showinfo
 from tkinter.simpledialog import askstring
 from tkinter.messagebox import askquestion
 import os
+import tempfile, shutil
 
+file_path = os.path.realpath(__file__)
 user_in = ""
 F3_filename = ""
 FF3_filename = ""
@@ -34,181 +36,178 @@ E5_filename = ""
 
 def note_F3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for F3-Midi 53',message=filename)
 	global F3_filename
 	F3_filename=filename
 
 def note_FF3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for F#3-Midi 54',message=filename)
 	global FF3_filename
 	FF3_filename=filename
 
 def note_G3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for G3-Midi 55',message=filename)
 	global G3_filename
 	G3_filename=filename
 
 def note_GG3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for G#3-Midi 56',message=filename)
 	global GG3_filename
 	GG3_filename=filename
 
 def note_A3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for A3-Midi 57',message=filename)
 	global A3_filename
 	A3_filename=filename
 
 def note_AA3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for A#3-Midi 58',message=filename)
 	global AA3_filename
 	AA3_filename=filename
 
 def note_B3():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for B3-Midi 59',message=filename)
 	global B3_filename
 	B3_filename=filename
 
 def note_C4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for C4-Midi 60',message=filename)
 	global C4_filename
 	C4_filename=filename
 
 def note_CC4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for C#4-Midi 61',message=filename)
 	global CC4_filename
 	CC4_filename=filename
 
 def note_D4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for D4-Midi 62',message=filename)
 	global D4_filename
 	D4_filename=filename
 	
 def note_DD4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for D#4-Midi 63',message=filename)
 	global DD4_filename
 	DD4_filename=filename
 
 def note_E4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for E4-Midi 64',message=filename)
 	global E4_filename
 	E4_filename=filename
 
 def note_F4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for F4-Midi 65',message=filename)
 	global F4_filename
 	F4_filename=filename
 
 def note_FF4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for F#4-Midi 66',message=filename)
 	global FF4_filename
 	FF4_filename=filename
 
 def note_G4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for G4-Midi 67',message=filename)
 	global G4_filename
 	G4_filename=filename
 
 def note_GG4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for G#4-Midi 68',message=filename)
 	global GG4_filename
 	GG4_filename=filename
 
 def note_A4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for A4-Midi 69',message=filename)
 	global A4_filename
 	A4_filename=filename
 
 def note_AA4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for A#4-Midi 70',message=filename)
 	global AA4_filename
 	AA4_filename=filename
 
 def note_B4():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for B4-Midi 71',message=filename)
 	global B4_filename
 	B4_filename=filename
 
 def note_C5():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for C5-Midi 72',message=filename)
 	global C5_filename
 	C5_filename=filename
 
 def note_CC5():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for C#5-Midi 73',message=filename)
 	global CC5_filename
 	CC5_filename=filename
 
 def note_D5():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for D5-Midi 74',message=filename)
 	global D5_filename
 	D5_filename=filename
 	
 def note_DD5():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for D#5-Midi 75',message=filename)
 	global DD5_filename
 	DD5_filename=filename
 
 def note_E5():
 	filetypes = (('wav files', '*.wav'),('All files', '*.*'))
-	filename = fd.askopenfilename(title='Open a file',initialdir='/home/pi/.config/LMN-3/drum_kits/',filetypes=filetypes)
+	filename = fd.askopenfilename(title='Open a file',initialdir=file_path,filetypes=filetypes)
 	showinfo(title='Selected File for E5-Midi 76',message=filename)
 	global E5_filename
 	E5_filename=filename
 
 def make_yaml():
-        user_in = askstring('LMN3 Dialog', "Enter directory name:")
+        user_in = askstring('LMN3 Dialog', "Enter drum kit name")
+        filetypes = (('yaml files', '.yaml'),('All files', '.*'))
+        yfilename = fd.asksaveasfile(title='Save YAML to...',initialdir=file_path,filetypes=filetypes,initialfile=user_in)
 
-        # specify your path of drum kit directory
-        path = "/home/pi/.config/LMN-3/drum_kits/"+user_in
-
-        if os.path.exists('/home/pi/'+user_in+'.yaml'):
-                os.remove('/home/pi/'+user_in+'.yaml')
-        f = open('/home/pi/'+user_in+'.yaml','w')
+        f = tempfile.NamedTemporaryFile(mode='w+t', delete=False)
         f.write('name: "'+user_in+'"\n')
         f.write('mappings:\n')
 
@@ -332,21 +331,16 @@ def make_yaml():
                 f.write('    file_name: "'+E5_filename+'"\n')
         else:
                 f.write('    file_name: ""\n')
-        f.close()
 
-        cpy = askquestion('LMN3 Dialog', "Do you want to copy the YAML file to the drumkit directory?")
-        if cpy == 'yes' :
-                cmd = 'cp '+user_in+'.yaml /home/pi/.config/LMN-3/drum_kits/'+user_in+'/'+user_in+'.yaml'
-                resp = os.system(cmd)
-                print('Copied')
-                showinfo(title='LMN3 Dialog',message='Copied!')
-                cmd = 'rm /home/pi/'+user_in+'.yaml'
-                os.system(cmd)
-        else:
-                print("OK, not copied")
-                showinfo(title='LMN3 Dialog',message='Not Copied!')
-                cmd = 'rm /home/pi/'+user_in+'.yaml'
-                os.system(cmd)
+        fn = f.name
+        f.close()
+        
+        shutil.copy(fn, yfilename.name+".yaml")
+        os.remove(fn)
+
+        showinfo(title='YAML Saved...',message=yfilename.name+".yaml")
+        #os.remove(yfilename.name)
+
 	
 class MyFirstGUI:
 	def __init__(self, master):
@@ -436,7 +430,7 @@ class MyFirstGUI:
 
 
 root = Tk()
-#root.iconbitmap(r'/home/pi/ico.ico')
+root.iconbitmap(os.path.dirname(file_path)+r'\ico.ico')
 my_gui = MyFirstGUI(root)
 num1 = StringVar()
 
